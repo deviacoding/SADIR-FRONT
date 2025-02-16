@@ -1,13 +1,339 @@
-body {
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Tous les titres H2 */
+
+.trusted-info, .request, .best, .faster-bateau, .affordable{
+  font-size: 35px;
+  font-weight: 800;
+  margin: 0;
 }
+
+/* Header */
+
+header{
+  background-color:#1F1F2E;
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: -13px;
+}
+
+.contacte{
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-left: 40px;
+  align-items: center;
+}
+
+.contacte img{
+  width: 20px;
+  height: 20px;
+}
+
+.email{
+  filter: invert(100%);
+}
+
+.reseaux{
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-right: 40px;
+}
+
+svg.reso{
+  padding-top: 10px;
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+/* Menu navigation */
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: -50px;
+  margin-bottom: -15px;
+}
+
+.truck{
+  width: 40px;
+  height: 40px;
+  fill: #FF4800;
+}
+
+.faster{
+  font-size: 35px;
+  font-weight: 800;
+  color: #FF4800;
+}
+
+.navigation-menu, .a{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  list-style-type: none;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+.a :hover, .navigation-menu :hover {
+  text-decoration: none;
+  color: white;
+  background-color: #FF4800;
+  padding: 15px 15px;
+  transition: 0.3s;
+}
+
+.button-menu{
+  border: none;
+  background-color: #FF4800;
+  color: white;
+  padding: 10px 30px;
+  margin-left: 10px;
+}
+
+/* Recherche */
+
+.recherche{
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/header.jpg");
+  background-attachment:inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px;
+  margin-top: 0;
+}
+
+.safe-faster{
+  font-size: 30px;
+  color: #FF4800;
+  margin-bottom: 0;
+}
+
+.logistics{
+  font-size: 52px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 0;
+}
+
+.tracking{
+  border: none;
+  height: 50px;
+  width: 330px;
+  margin: -4px;
+  font-family: "Poppins";
+  padding-left: 20px;
+}
+
+.bouton{
+  border: none;
+  background-color: #FF4800;
+  color: white;
+  padding: 16px 15px;
+  margin: 0px;
+  font-family: "Poppins";
+}
+
+/* section about us */
+
+.about-us{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px;
+  gap: 30px;
+}
+
+.img-about{
+  text-align: center;
+}
+
+.camion{
+  height: 300px;
+  width: 350px;
+  margin-bottom: 0;
+}
+
+.p-about{
+  font-size: 25px;
+  font-weight: 700;
+  background-color: #FF4800;
+  margin-top: -7px;
+  padding: 20px;
+}
+
+h3{
+  font-size: 15px;
+  color: #FF4800;
+  margin: 0;
+}
+
+p{
+  font-weight: 300;
+  max-width: 1000px;
+}
+
+.play{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.shadow{
+  padding: 15px;
+  background-color: #86756e33;
+  border-radius: 50%;
+}
+
+.icon{
+  padding: 15px;
+  background-color: #FF4800;
+  border-radius: 50%;
+}
+
+.play-video{
+  color: #000000;
+}
+
+/* section get a quote */
+
+.quote{
+  background-color: #75757523;
+}
+
+.get{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 70px;
+}
+
+.resulta{
+  display: flex;
+  justify-content: space-between;
+}
+
+.chiffre{
+  margin: 0;
+}
+
+.titre-225, .titre-1050, .titre-2500{
+  color: #FF4800;
+  font-size: 25px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.recherche-quote{
+  background-color: #FF4800;
+  margin: 0;
+  padding: 100px 50px ;
+}
+
+.input-quote{
+  border: none;
+  width: 200px;
+  height: 40px;
+  padding-left: 20px;
+}
+
+select{
+  border: none;
+  width: 222px;
+  height: 40px;
+  padding-left: 20px;
+}
+
+.bouton-input{
+  border: none;
+  width: 222px;
+  height: 40px;
+  background-color: #1F1F2E;
+  color: white;
+}
+
+/* section our services */
+
+.services{
+  text-align: center;
+}
+
+.les-services{
+  display: flex;
+  margin: 50px;
+  gap: 50px;
+}
+
+.contenu-services{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FF4800;
+  width: 250px;  
+  height: 55px;
+  gap: 15px;
+  /* qui prenne la place qui fait pas plus */
+}
+
+h4.Air{
+  color: white;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.a-avion{
+  color: #FF4800;
+}
+
+/* section bateau */
+
+.bateau{
+  background-color: #75757523;
+}
+
+.background{
+  margin: 70px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.img-bateau{
+  margin-left: 50px;
+  width: 400px;
+  height: 480px;
+}
+
+.point-bateau{
+  font-weight: 500;
+}
+
+.button-learn{
+  border: none;
+  color: white;
+  background-color: #FF4800;
+  width: 130px;
+  height: 30px;
+  margin-top: 30px;
+}
+
+/* Section Price */
+

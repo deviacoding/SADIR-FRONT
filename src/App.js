@@ -10,7 +10,7 @@ function App() {
     // 3 on referme les balises ( img / br / input )
     // 4 on importe une image comme un fichier js
     // 5 on supprime les commmentaires html
-    // 6 style="height: 8px" devient style={{height : "8px"}}
+    // 6 style="height: 8px" devient style={{height : "8px"}} // 
 
   return (
     <div className="">

@@ -2,19 +2,19 @@ import React, {useState} from 'react'
 
 
 const FirstState = () => {
-    const myName = "Elie"
-    const [state, setState] = useState(myName)
+    // const etat = "Non lu"
+    const [status, setStatus] = useState("Non lu")
     const handleClick = () => {
-        setState("imposteur")
+      setStatus("Lu")
     }
     const reInitState = () => {
-        setState(myName)
+      setStatus("Non lu")
     }
   return (
     <div>
-        <p>Bonjour je m'appel {state}</p>
-        <button onClick={()=> handleClick()}>Button Changeur de State</button>
-        <button onClick={()=> reInitState()}>Reinitialise</button>
+        <button onClick={()=> handleClick()}>{status}</button>
+        <button onClick={()=> reInitState()}>marquer come non lu</button>
+
     </div>
   )
 }

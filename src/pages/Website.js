@@ -12,9 +12,9 @@ const Website = () => {
     // 4 on importe une image comme un fichier js
     // 5 on supprime les commmentaires html
     // 6 style="height: 8px" devient style={{height : "8px"}} //
-     
+
   return (
-    <div className="">
+    <>
 
     <Header />
 
@@ -329,7 +329,7 @@ const Website = () => {
 
     </section>
     
-</div>
+</>
   )
 }
 

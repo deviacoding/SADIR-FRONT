@@ -3,6 +3,7 @@ import './App.css';
 import Website from './pages/Website';
 import NotFound from './pages/NotFound';
 import FirstState from './pages/FirstState';
+import SimpleCounter from './pages/SimpleCounter';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Website />} />
         <Route path="/FirstState" element={<FirstState />} />
+        <Route path="/SimpleCounter" element={<SimpleCounter />} />
 
 
         {/* il doit etre la derniere route  */}

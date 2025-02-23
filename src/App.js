@@ -29,7 +29,7 @@ function App() {
             <Route path='/ListExemple' element={<ListExemple />} />
             <Route path='/ExempleObject' element={<ExempleObject />} />
             <Route path='/ReactParticles' element={<ReactParticles />} />
-            <Route path="*" element={<NotFound />} /> 
+            <Route path="*" element={<ReactParticles />} /> 
         </Routes>
     </BrowserRouter>
   )

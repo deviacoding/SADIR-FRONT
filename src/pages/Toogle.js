@@ -6,7 +6,7 @@ const Toogle = () => {
   return (
 
     <div>
-        <h1>Revelez votre votre mot de passe ? </h1>
+        <h1 className="">Revelez votre votre mot de passe ? </h1>
         <button onClick={()=> setToogle(!toogle)} >  {toogle ? "Cacher" : "Appuiyez pour reveler"}      </button>
 
         {

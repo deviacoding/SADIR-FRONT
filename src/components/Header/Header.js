@@ -8,7 +8,7 @@ const Header = (props) => {
 
 
   return (
-        <header className="fixed-top">
+        <header className="">
     
           <div className="contacte">
     

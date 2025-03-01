@@ -8,7 +8,11 @@ import Toogle from "./pages/Toogle.js"
 import ListExemple from './pages/ListExemple.js';
 import ExempleObject from './pages/ObjExemple.js';
 import ReactParticles from "./pages/ReactParticles.js"
-
+import ExempleCssFunction from "./components/ExempleCssFonction/ExempleCssFunction.js"
+import ExCssUseState from './components/ExCssUseState/ExCssUseState.js';
+import Home from './pages/Home.js';
+import FirstUseEffect from './pages/FirstUseEffect.js';
+import Etudiant from './pages/Etudiant.js';
 
 function App() {
 
@@ -22,13 +26,18 @@ function App() {
   return (
     <BrowserRouter>
         <Routes>
-            <Route path='/' element={<Website />} />
+            <Route path='/' element={<Home />} />
+            <Route path='/Website' element={<Website />} />
             <Route path='/FirstState' element={<FirstState />} />
             <Route path='/SimpleCounter' element={<SimpleCounter />} />
             <Route path='/Toogle' element={<Toogle />} />
             <Route path='/ListExemple' element={<ListExemple />} />
             <Route path='/ExempleObject' element={<ExempleObject />} />
             <Route path='/ReactParticles' element={<ReactParticles />} />
+            <Route path='/ExempleCssFunction' element={<ExempleCssFunction />} />
+            <Route path='/ExCssUseState' element={<ExCssUseState />} />
+            <Route path='/FirstUseEffect' element={<FirstUseEffect />} />
+            <Route path='/Etudiant' element={<Etudiant />} />
             <Route path="*" element={<ReactParticles />} /> 
         </Routes>
     </BrowserRouter>

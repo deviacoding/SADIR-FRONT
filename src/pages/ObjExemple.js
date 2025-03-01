@@ -8,11 +8,15 @@ const ExempleObject = () => {
         niveau : "en formation",
       })
 
+      // const handleClickJunior = () => {
+      //   setState((prevState)=> {
+      //     console.log("prevState",prevState)
+      //       return({...prevState, niveau: "Junior"  })
+      //   })
+      // }
       const handleClickJunior = () => {
-        setState((prevState)=> {
-          console.log("prevState",prevState)
-            return({...prevState, niveau: "Junior"  })
-        })
+        
+        setState( (prevState)=> ({...prevState, niveau: "Junior"  }) )
       }
 
       const handleClickIntermediaire = () => {

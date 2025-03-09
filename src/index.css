@@ -75,6 +75,12 @@ svg.reso{
   color: #FF4800;
 }
 
+.fasterBlue{
+  font-size: 35px;
+  font-weight: 800;
+  color: blue;
+}
+
 .navigation-menu, .a{
   display: flex;
   justify-content: space-between;
@@ -82,13 +88,25 @@ svg.reso{
   list-style-type: none;
   text-decoration: none;
   font-weight: 600;
-  color: black;
+  color: black!important;
+}
+
+
+.navigation-menuRed, .a{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  list-style-type: none;
+  text-decoration: none;
+  font-weight: 600;
+  /* color: red!important; */
+  border: 2px solid red
 }
 
 .a :hover, .navigation-menu :hover {
   text-decoration: none;
   color: white;
-  background-color: #FF4800;
+  /* background-color: #FF4800; */
   padding: 15px 15px;
   transition: 0.3s;
 }

@@ -9,7 +9,7 @@ const Toogle = () => {
   return (
     <div>
         <h1>Cliquez pour reveler votre mot de passe</h1>
-        <button onClick={()=> setToogle(!toogle)}> { toogle === true ? "Cacher mon mpd" : "Appuiyez pour reveler"   }   </button>
+        <button onClick={()=> setToogle(!toogle)}> { toogle === true ? "Cacher mon mpd" : "Appuiyez pour reveler"   }</button>
 
         {
             toogle === true && (

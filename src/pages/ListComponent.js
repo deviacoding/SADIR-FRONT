@@ -17,9 +17,6 @@ const ListComponent = () => {
         }
         ])
 
-
-
-
   return (
     <div>
         <h1>Application List</h1>
@@ -28,7 +25,8 @@ const ListComponent = () => {
                 <div key={item.id}>
                     le cours le plus import est : {item.coursLePlusImportant}
                 </div>
-            ) )
+            )
+           )
         }
 
     </div>

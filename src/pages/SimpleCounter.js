@@ -1,9 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const SimpleCounter = () => {
   const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    // console.log("Mon component a changé");
+    // console.log(document.title, typeof(document.title));
+    document.title = `Vous avez cliqué ${count} fois`;
+ 
+  }, [count]);
 
   const increment = () => {
     setCount(count + 1);

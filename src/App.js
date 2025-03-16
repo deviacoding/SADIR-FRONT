@@ -11,6 +11,10 @@ import ListComponent from './pages/ListComponent';
 import DarkMode from './pages/DarkMode';
 import Home from './pages/Home';
 import Layout from './components/Layout/Layout';
+import FetchJsonPlaceHolder from './pages/UseEffect/FetchJsonPlaceHolder';
+import FetchUsers from './pages/UseEffect/FetchUsers';
+import MouseTracker from './pages/UseEffect/MouseTracker';
+import TimerInterval from './pages/UseEffect/TimerInterval';
 
 function App() {
 
@@ -19,14 +23,18 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout><Home /></Layout>} />
-        <Route path="/Website" element={<Website />} />
+        <Route path="/" element={<Layout  ><Home /></Layout>} />
+        <Route path="/Website" element={<Layout  footer  ><Website /></Layout>} />
         <Route path="/FirstState" element={<FirstState />} />
         <Route path="/SimpleCounter" element={<SimpleCounter />} />
         <Route path="/CounterClassic" element={<CounterClassic />} />
         <Route path="/Toogle" element={<Toogle />} />
         <Route path="/ObjComponent" element={<ObjComponent />} />
         <Route path="/ListComponent" element={<ListComponent />} />
+        <Route path="/FetchJsonPlaceHolder" element={<FetchJsonPlaceHolder />} />
+        <Route path="/FetchUsers" element={<FetchUsers />} />
+        <Route path="/MouseTracker" element={<MouseTracker />} />
+        <Route path="/TimerInterval" element={<TimerInterval />} />
 
         <Route path="/DarkMode" element={<DarkMode />} />
 

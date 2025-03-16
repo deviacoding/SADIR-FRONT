@@ -1,16 +1,16 @@
-import React from 'react'
-import NavBarB from '../NavbarB/NavbarB'
-import Footer from '../Footer/Footer'
+import React from "react";
+import NavBarB from "../NavbarB/NavbarB";
+import Footer from "../Footer/Footer";
 
-const Layout = (props) => {
-    console.log(props, "props")
+const Layout = ({ children, navbar, footer }) => {
+  console.log("props", children, navbar, footer);
   return (
-    <>
-        <NavBarB />
-        {props.children}
-        <Footer />
-    </>
-  )
-}
+    <div className="d-flex flex-column min-vh-100">
+      {(navbar === true || navbar === undefined) && <NavBarB />}
+      <main className="flex-grow-1">{children}</main>
+      {(footer === true || footer === undefined) && <Footer />}
+    </div>
+  );
+};
 
-export default Layout
+export default Layout;

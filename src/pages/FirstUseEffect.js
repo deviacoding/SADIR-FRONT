@@ -14,7 +14,7 @@ const FirstUseEffect = () => {
                 setdata(response.data)
             })
         
-            .catch(error => console.log(error));
+            .catch(error => console.log(error));    
         
     }, []);
 

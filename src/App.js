@@ -13,6 +13,12 @@ import ExCssUseState from './components/ExCssUseState/ExCssUseState.js';
 import Home from './pages/Home.js';
 import FirstUseEffect from './pages/FirstUseEffect.js';
 import Etudiant from './pages/Etudiant.js';
+import Layout from './components/Layout/Layout.js';
+import Blog from './pages/Blog.js';
+import Timer from "./pages/ClearIntervalC.js"
+import MouseTracker from './pages/Mousetracker.js';
+import Basic from './pages/DataTable/Basic.js';
+import BasicDB from './pages/DataTable/BasicDB.js';
 
 function App() {
 
@@ -26,18 +32,28 @@ function App() {
   return (
     <BrowserRouter>
         <Routes>
-            <Route path='/' element={<Home />} />
+     
+            <Route path='/' element={<Layout navbar ><Home /></Layout>} />
             <Route path='/Website' element={<Website />} />
+
             <Route path='/FirstState' element={<FirstState />} />
             <Route path='/SimpleCounter' element={<SimpleCounter />} />
             <Route path='/Toogle' element={<Toogle />} />
             <Route path='/ListExemple' element={<ListExemple />} />
             <Route path='/ExempleObject' element={<ExempleObject />} />
             <Route path='/ReactParticles' element={<ReactParticles />} />
+
             <Route path='/ExempleCssFunction' element={<ExempleCssFunction />} />
             <Route path='/ExCssUseState' element={<ExCssUseState />} />
-            <Route path='/FirstUseEffect' element={<FirstUseEffect />} />
+
+
+            <Route path='/FirstUseEffect' element={<FirstUseEffect />} />      
+            <Route path='/Timer' element={<Layout navbar ><Timer /></Layout>} />      
+            <Route path='/MouseTracker' element={<Layout navbar ><MouseTracker /></Layout>} />      
+            <Route path='/Basic' element={<Layout navbar ><Basic /></Layout>} />      
+            <Route path='/BasicDB' element={<Layout navbar ><BasicDB /></Layout>} />      
             <Route path='/Etudiant' element={<Etudiant />} />
+            <Route path='/blog/:id' element={<Blog />} />
             <Route path="*" element={<ReactParticles />} /> 
         </Routes>
     </BrowserRouter>

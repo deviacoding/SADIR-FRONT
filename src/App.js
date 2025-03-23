@@ -20,6 +20,9 @@ import MouseTracker from './pages/Mousetracker.js';
 import Basic from './pages/DataTable/Basic.js';
 import BasicDB from './pages/DataTable/BasicDB.js';
 import AllArticles from './pages/Blog/AllArticles.js';
+import TableQuotes from './pages/TableQuotes/TableQuotes.js';
+import Signin from './pages/Auth/Signin.js';
+import Signup from './pages/Auth/Signup.js';
 
 function App() {
 
@@ -61,6 +64,15 @@ function App() {
 
             <Route path='/articles' element={<AllArticles />} />
             <Route path='/blog/:id' element={<Blog />} />
+
+
+            <Route path='/Signin' element={<Signin />} />
+            <Route path='/Signup' element={<Signup />} />
+            <Route path='/TableQuotes' element={<TableQuotes />} />
+
+
+
+
             <Route path="*" element={<ReactParticles />} /> 
         </Routes>
     </BrowserRouter>

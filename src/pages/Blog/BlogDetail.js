@@ -8,7 +8,7 @@ const Blog = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/articles/${id}`)
+      .get(`http://localhost:8001/articles/${id}`)
       .then((response) => {
         setArticle(response.data.data[0]);
       })

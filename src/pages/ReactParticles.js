@@ -13,6 +13,9 @@ const ParticlesExemple = () => {
     }, []);
 
     return (
+
+        <>
+      
         <Particles
             id="tsparticles"
             init={particlesInit}
@@ -92,6 +95,7 @@ const ParticlesExemple = () => {
             
         }
         />
+        </>
     );
 };
 

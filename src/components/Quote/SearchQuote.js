@@ -31,7 +31,6 @@ const SearchQuote = () => {
   };
 
   const handleChangeName = (e) => {
-
     setGlobalState((prevState) => ({
       ...prevState,
       inputName: e.target.value,

@@ -7,7 +7,7 @@ const AllArticles = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/articles")
+      .get("http://localhost:8001/articles")
       .then((response) => {
         console.log(response.data.data);
         setArticles(response.data.data);

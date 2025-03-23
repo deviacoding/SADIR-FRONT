@@ -13,12 +13,15 @@ const SimpleCounter = () => {
   }, [count]);
 
   const increment = () => {
+    // je rajoute un a mon compteur
     setCount(count + 1);
   };
   const decrement = () => {
+    // retirer un a mon compteur
     setCount(count - 1);
   };
   const reset = () => {
+    // remettre mon compteur a zero
     setCount(0);
   };
 

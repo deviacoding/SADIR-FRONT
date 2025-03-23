@@ -32,12 +32,12 @@ function App() {
         <Route path="/ObjComponent" element={<ObjComponent />} />
         <Route path="/ListComponent" element={<ListComponent />} />
         <Route path="/FetchJsonPlaceHolder" element={<FetchJsonPlaceHolder />} />
-        <Route path="/FetchUsers" element={<FetchUsers />} />
+
         <Route path="/MouseTracker" element={<MouseTracker />} />
         <Route path="/TimerInterval" element={<TimerInterval />} />
 
         <Route path="/DarkMode" element={<DarkMode />} />
-
+        <Route path="/FetchUsers" element={<FetchUsers />} />
 
         {/* il doit etre la derniere route  */}
         <Route path="*" element={<NotFound />} />

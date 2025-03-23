@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import telephone from "../../assets/icons8-telephone.png";
 import icons8mail16 from "../../assets/icons8-mail-16.png";
 import "./Header.css";
 
 const Header = (props) => {
   console.log("Header Props", props)
-  const [ColorContact, setColorContact] = useState("blue");
+ // const [ColorContact, setColorContact] = useState("blue");
 
   return (
-    <header onClick={() => setColorContact("red")}>
+    <header 
+   // onClick={() => setColorContact("red")}
+    >
       <div
         className="contacte"
         //  style={{backgroundColor: ColorContact}}

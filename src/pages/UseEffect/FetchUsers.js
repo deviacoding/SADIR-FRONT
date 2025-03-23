@@ -3,6 +3,7 @@ import axios from "axios"
 
 const FetchUsers = () => {
     const [data, setData] = useState([])
+    const [error, setError] = useState();
 
     useEffect(() => {
         console.log("Mon component est monté")
@@ -11,7 +12,10 @@ const FetchUsers = () => {
             console.log(response.data.data)
             setData(response.data.data)
         })
-        .catch((error) => console.log(error))
+        .catch((error) => {
+            console.log("error", error)
+            setError("Une erreur est survenu")
+        } )
     }, [])
 
   return (
@@ -26,6 +30,12 @@ const FetchUsers = () => {
                     <p>Password : {user.pwd}</p>
                 </div>
             ))}
+            {
+                error && (
+                    <div>{error}</div>
+                )
+
+            }
         </div>
         
 

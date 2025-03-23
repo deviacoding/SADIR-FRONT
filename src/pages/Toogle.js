@@ -3,13 +3,25 @@ import React, {useState} from 'react'
 const Toogle = () => {
     const [toogle, setToogle] = useState(false)
 
-    // console.log("toogle", toogle)
+     console.log("toogle", toogle)
 
 
   return (
     <div>
         <h1>Cliquez pour reveler votre mot de passe</h1>
-        <button onClick={()=> setToogle(!toogle)}> { toogle === true ? "Cacher mon mpd" : "Appuiyez pour reveler"   }</button>
+        <button onClick={()=> setToogle(!toogle)}> 
+          { toogle === true 
+            ? "Cacher mon mpd" 
+            : "Appuiyez pour reveler"}
+
+            {/* {toogle === true  && 
+              "Cacher mon mpd" 
+            }
+            {toogle === false  && 
+              "Appuiyez pour reveler"
+            } */}
+            
+            </button>
 
         {
             toogle === true && (

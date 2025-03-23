@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 const ListComponent = () => {
     
-    const [list, setList] = useState([ 
+    const [list] = useState([ 
         {
           id : 1 ,
           coursLePlusImportant: "React"
@@ -28,7 +28,6 @@ const ListComponent = () => {
             )
            )
         }
-
     </div>
   )
 }

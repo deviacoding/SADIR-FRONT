@@ -14,11 +14,12 @@ import Home from './pages/Home.js';
 import FirstUseEffect from './pages/FirstUseEffect.js';
 import Etudiant from './pages/Etudiant.js';
 import Layout from './components/Layout/Layout.js';
-import Blog from './pages/Blog.js';
+import Blog from './pages/Blog/BlogDetail.js';
 import Timer from "./pages/ClearIntervalC.js"
 import MouseTracker from './pages/Mousetracker.js';
 import Basic from './pages/DataTable/Basic.js';
 import BasicDB from './pages/DataTable/BasicDB.js';
+import AllArticles from './pages/Blog/AllArticles.js';
 
 function App() {
 
@@ -53,6 +54,12 @@ function App() {
             <Route path='/Basic' element={<Layout navbar ><Basic /></Layout>} />      
             <Route path='/BasicDB' element={<Layout navbar ><BasicDB /></Layout>} />      
             <Route path='/Etudiant' element={<Etudiant />} />
+
+            {/* Routes du blog */}
+
+
+
+            <Route path='/articles' element={<AllArticles />} />
             <Route path='/blog/:id' element={<Blog />} />
             <Route path="*" element={<ReactParticles />} /> 
         </Routes>

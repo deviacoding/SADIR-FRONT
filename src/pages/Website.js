@@ -6,8 +6,11 @@ import CardLogistique from "../components/CardLogistique/CardLogistique";
 import Price from "../components/Price/Price";
 import Bateau from "../components/Bateau/Bateau";
 import SearchQuote from "../components/SearchQuote/SearchQuote";
+import { useTranslation } from 'react-i18next'
 
 const Website = () => {
+
+
   // 1 class devient className
   // 2 un component commence par une Majuscule
   // 3 on referme les balises ( img / br / input )
@@ -15,6 +18,8 @@ const Website = () => {
   // 5 on supprime les commmentaires html
   // 6 style="height: 8px" devient style={{height : "8px"}} //
 
+
+      const { t } = useTranslation();
   const [ChangeColorFaster, setChangeColorFaster] = useState("faster");
   const [ChangeMenuColor, setChangeMenuColor] = useState(false);
   const [toogle, setToogle] = useState(false);
@@ -143,7 +148,8 @@ const Website = () => {
       <section className="quote">
         <div className="get">
           <div className="info-quote">
-            <h3 className="titre-quote">GET A QUOTE</h3>
+            <h3 className="titre-quote">{t("getQuote")}</h3>
+
 
             <h2 className="request">Request A Free Quote</h2>
 
@@ -171,8 +177,8 @@ const Website = () => {
               </div>
             </div>
           </div>
-
-          <SearchQuote />
+              <div  ><SearchQuote /></div>
+          
         </div>
       </section>
 
@@ -222,7 +228,7 @@ const Website = () => {
                 <div className="a-avion btn" onClick={()=> setToogle(!toogle)}  >Read More</div>
               </>
             ) : (
-              <div>
+              <div id="#form">
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Mollitia sit sint earum dolorum tempora facere cumque

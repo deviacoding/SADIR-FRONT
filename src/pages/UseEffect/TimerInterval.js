@@ -14,10 +14,10 @@ const TimerInterval = () => {
 
   return (
     <div>
-            <h1>TimerInterval</h1>
-            <p>{time} seconde qui se sont ecouler depuis le montage de mon component</p>
-            {time >=  5 && "voulez vous continuer la cession ?"}
-        </div>
+        <h1>TimerInterval</h1>
+        <p>{time} seconde qui se sont ecouler depuis le montage de mon component</p>
+        {time >=  5 && "voulez vous continuer la cession ?"}
+    </div>
   )
 }
 

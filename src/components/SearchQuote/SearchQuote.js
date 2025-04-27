@@ -17,6 +17,8 @@ const SearchQuote = () => {
         messageFinal : "Merci pour votre Devis, vous obtiendrez une reponse dans 24H"
     });
 
+    console.log("GlobalState",GlobalState)
+
     const upStateStep = () => {
 
       const dataForAxios = {
@@ -28,21 +30,26 @@ const SearchQuote = () => {
 
       axios.post('http://localhost:8000/quotes', dataForAxios)
       .then(function (response) {
+        // 200 || 201
         console.log(response);
         setGlobalState((prevState)=>({...prevState, step : GlobalState.step+1 }))        
       })
       .catch(function (error) {
+        //  tous les codes de 400
         console.log(error);
       });
 
     }
 
-    const downStateStep = () => {
-        setGlobalState((prevState)=>({...prevState, step : GlobalState.step-1 }))
-    }
+    // const downStateStep = () => {
+    //     setGlobalState((prevState)=>({...prevState, step : GlobalState.step-1 }))
+    // }
 
     const handleInputName = (e) => {
       console.log("e.target", e.target)
+      // if (e.target.value === "-") {
+      //   alert("un tiret neeset pas possible")
+      // }
       setGlobalState((prevState)=> {
         console.log("prevState", prevState)
         return ({
@@ -53,14 +60,15 @@ const SearchQuote = () => {
     }
 
     const handleChange = (e) => {
-      console.log(e.target)
-      const {name, value } = e.target
+      console.log("e.target", e.target)
+      const name = e.target.name
+      const value = e.target.value
+      // const {name, value } = e.target
       setGlobalState((prevState)=> ({
         ...prevState,
         [name] : value
       }))
       console.log(GlobalState)
-      
     }
 
   return (
